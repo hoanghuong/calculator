@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".calculatorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/no_height"
+        android:layout_weight="2"
+        android:padding="@dimen/marin_button">
+
+        <TextView
+            android:id="@+id/txtresutl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_resutl"
+            android:gravity="right|bottom"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_result"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/no_height"
+        android:layout_weight="8"
+        android:stretchColumns="*">
+
+        <TableRow android:layout_marginTop="@dimen/marin_button">
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_ac"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btntypenumber"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/type_number"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnpercent"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_percent"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnsum"
+                android:layout_height="@dimen/btn_height"
+                android:background="@color/color_calculator"
+                android:text="@string/key_summation"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="@dimen/marin_button">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_7"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_8"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_9"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnsubtraction"
+                android:layout_height="@dimen/btn_height"
+                android:background="@color/color_calculator"
+                android:text="@string/key_subtraction"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="@dimen/marin_button">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_4"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_5"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_6"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnmultip"
+                android:layout_height="@dimen/btn_height"
+                android:background="@color/color_calculator"
+                android:text="@string/key_multiplication"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="@dimen/marin_button">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_1"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_2"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_3"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btndivision"
+                android:layout_height="@dimen/btn_height"
+                android:background="@color/color_calculator"
+                android:text="@string/key_division"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="@dimen/marin_button">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_height="@dimen/btn_height"
+                android:layout_span="2"
+                android:text="@string/key_0"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btndog"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/key_dog"
+                android:textColor="@color/color_dark"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnresutl"
+                android:layout_height="@dimen/btn_height"
+                android:background="@color/color_calculator"
+                android:text="@string/key_resutl"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+
